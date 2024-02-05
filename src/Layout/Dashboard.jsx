@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import useWeatherApi from "../Hooks/useWeatherApi";
 import useAuth from "../Hooks/useAuth";
 import DashboardMenus from "../Pages/Dashboard/DashboardMenus";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   const weather = useWeatherApi();
@@ -20,8 +21,8 @@ const Dashboard = () => {
                 <p>{user.metadata.lastSignInTime}</p>
               </div>
 
-              <div className="text-white font-workSans flex flex-col lg:flex-row  p-4">
-                <ul className="sidebar flex flex-col font-medium w-full">
+              <div className="text-white font-workSans flex flex-col lg:flex-row  p-4 ">
+                <ul className="sidebar flex flex-col font-medium  w-full">
                   <DashboardMenus />
                 </ul>
               </div>

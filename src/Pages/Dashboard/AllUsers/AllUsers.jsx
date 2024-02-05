@@ -5,6 +5,7 @@ import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../../Components/Loading/Loading";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AllUsers = () => {
   const axiosSecure = useAxiosSecure();
@@ -30,8 +31,8 @@ const AllUsers = () => {
   // Change User Status
   const handleStatus = (user) => {
     Swal.fire({
-      title: "Are you sure?",
-      text: "You want to Verify? ",
+      title: `Let's Inactive Now?`,
+      text: "Are you sure, want to proceed ? ",
       icon: "question",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -46,7 +47,7 @@ const AllUsers = () => {
             Swal.fire({
               position: "center",
               icon: "success",
-              title: `${user.name} is Verified Now!`,
+              title: `${user.name} successfully deactivated!`,
               showConfirmButton: false,
               timer: 1500,
             });
@@ -56,8 +57,6 @@ const AllUsers = () => {
     });
   };
 
-  //User Add
-  const handleAddUser = () => {};
 
   // User Delete
   const handleDeleteUser = (user) => {
@@ -146,12 +145,11 @@ const AllUsers = () => {
 
                 {/* Add / Delete User */}
                 <td className={` flex flex-row gap-4 items-center justify-center`}>
-                  <button
-                    onClick={() => handleAddUser(user)}
-                    className="bg-green-600 p-2 rounded"
-                  >
-                    <FaUserAlt className="text-white"></FaUserAlt>
-                  </button>
+                  <Link to={`/dashboard/addUser`}>
+                    <button className="bg-slate-800 hover:bg-green-800  p-2 rounded" >
+                        <FaUserAlt className="text-white"></FaUserAlt>
+                    </button>
+                  </Link>
 
                   <button
                     onClick={() => handleDeleteUser(user)}

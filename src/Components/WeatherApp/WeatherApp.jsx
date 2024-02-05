@@ -69,7 +69,7 @@ const WeatherApp = () => {
                   <div className="bg-slate-700 w-full rounded-lg text-white p-4">
                     <h2 className="text-xl font-medium pb-2">Humidity</h2>
                     <p>{weather.current?.humidity} RH</p>
-                    <p>{weather.current?.condition.text} RH</p>
+                    <p>{weather.current?.condition.text}</p>
                   </div>
                 </div>
 
