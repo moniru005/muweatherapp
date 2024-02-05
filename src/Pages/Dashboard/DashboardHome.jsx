@@ -18,44 +18,29 @@ const DashboardHome = () => {
       });
   };
 
-  //   Date Formating
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  const month = currentDate.getMonth();
-  const day = currentDate.getDay();
-  const dayOfWeek = currentDate.getDay();
-  const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  const currentDayName = daysOfWeek[dayOfWeek];
+  
 
-  const getMonthName = (monthNumber) => {
-    const date = new Date();
-    date.setMonth(monthNumber - 1);
-    return date.toLocaleString("en-US", { month: "long" });
-  };
 
-  const fullDate = getMonthName(month) + " " + day + ", " + year;
-
-  //   console.log(fullDate);
 
   return (
     <div className="w-full">
       {/* topbar */}
       <div className="flex flex-col lg:flex-row justify-between items-center h-[120px] lg:h-[80px] bg-slate-800 rounded-lg px-4 py-3 lg:py-0 w-full">
         {/* left */}
-        <div className="flex flex-col text-white">
+        {/* <div className="flex flex-col text-white">
           <p>
             {getMonthName(month)} {year}
           </p>
           <p>
             {currentDayName}, {fullDate}
+          </p>
+        </div> */}
+        <div>
+          <p className="text-xl font-bold text-white uppercase">
+            Weather Forecasting Result
+          </p>
+          <p className="text-sm text-white">
+            Type your city/country inside the search box and press to show your results.
           </p>
         </div>
 

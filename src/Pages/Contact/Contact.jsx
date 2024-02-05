@@ -34,6 +34,7 @@ const Contact = () => {
                     showConfirmButton: false,
                     timer: 2500,
                   });
+                form.reset();
             }
         })
 
@@ -103,7 +104,7 @@ const Contact = () => {
                 Drop in our office
               </h1>
               <p className="text-gray-400">
-              If you would like to drop in and speak with us about your case, please call our office at (+880) 1683988686. We are located in the heart of Manhattan, near Grand Central Station.
+              If you would like to drop in and speak with us about your case, please call our office at (+880) 1683988686. We are located in the heart of Noakhali, near Grand Central Station.
               </p>
 
               
@@ -111,9 +112,9 @@ const Contact = () => {
                 <div className="flex flex-col w-full my-6 ">
                   <h2 className="text-2xl py-2 ">Main Office</h2>
                   <p className="text-gray-400">
-                  Shahi Tower (2nd Floor), 
-                  <p>Nazir Ahmed Chy RD, </p>
-                  <p>Anderkilla, CTG, BD</p>
+                  Engineer Tower (1st Floor), 
+                  <p>1255/1, Engineer Road, </p>
+                  <p>Maijdee, Noakhali, BD</p>
                   </p>
                 </div>
               
