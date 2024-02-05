@@ -34,11 +34,11 @@ const WeatherApp2 = () => {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="Search City/Country.."
-            className="p-2 rounded-l-lg border"
+            className="p-4 rounded-l-lg border border-gray-900 uppercase"
           />
           <button
             onClick={handleSearch}
-            className="rounded-r-lg rounded-l-none bg-slate-300 p-[8.5px] hover:bg-slate-200"
+            className="rounded-r-lg rounded-l-none bg-slate-300 p-[17px] hover:bg-slate-200"
           >
             Search
           </button>
@@ -55,9 +55,9 @@ const WeatherApp2 = () => {
       </div>
       <div className="flex px-4 lg:px-16 flex-col gap-4 pb-6 items-center">
         {/* Row-1 */}
-        <div className="flex lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           {/* Wind */}
-          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border b-gray-400 rounded flex flex-col justify-center items-center text-center p-6 bg-gray-900">
+          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform  rounded-lg hover:scale-105 cursor-pointer border b-gray-400  flex flex-col justify-center items-center text-center p-6 bg-gray-900">
             <div className="text-md font-bold flex flex-col text-white">
               <span className="uppercase">Wind</span>
               <span className="font-normal text-white text-sm">{weather.current?.last_updated}</span>
@@ -71,7 +71,7 @@ const WeatherApp2 = () => {
             </div>
           </div>
           {/* Humidity */}
-          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border b-gray-400 rounded flex flex-col justify-center items-center text-center p-6 bg-gray-900">
+          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform rounded-lg hover:scale-105 cursor-pointer border b-gray-400  flex flex-col justify-center items-center text-center p-6 bg-gray-900">
             <div className="text-md font-bold flex flex-col text-white">
               <span className="uppercase">Humidity</span>{" "}
               <span className="font-normal text-white text-sm">{weather.current?.last_updated}</span>
@@ -87,9 +87,9 @@ const WeatherApp2 = () => {
         </div>
 
         {/* Row-2 */}
-        <div className="flex lg:flex-row gap-4 ">
+        <div className="flex flex-col lg:flex-row gap-4 ">
           {/* Pressure */}
-          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border b-gray-400 rounded flex flex-col justify-center items-center text-center p-6 bg-gray-900">
+          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform  rounded-lg hover:scale-105 cursor-pointer border b-gray-400  flex flex-col justify-center items-center text-center p-6 bg-gray-900">
             <div className="text-md font-bold flex flex-col text-white">
               <span className="uppercase">Pressure</span>{" "}
               <span className="font-normal text-white text-sm">{weather.current?.last_updated}</span>
@@ -104,7 +104,7 @@ const WeatherApp2 = () => {
             </div>
           </div>
           {/* Temperature */}
-          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border b-gray-400 rounded flex flex-col justify-center items-center text-center p-6 bg-gray-900">
+          <div className="w-96 md:mr-20 mb-10 transition duration-500 ease-in-out transform rounded-lg hover:scale-105 cursor-pointer border b-gray-400  flex flex-col justify-center items-center text-center p-6 bg-gray-900">
             <div className="text-md font-bold flex flex-col text-white">
               <span className="uppercase">Temperature</span>{" "}
               <span className="font-normal text-white text-sm">{weather.current?.last_updated}</span>

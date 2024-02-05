@@ -4,8 +4,8 @@ const BannerCard = () => {
     const weather = useWeatherApi();
     return (
         <div className="m-10 items-center flex flex-col md:flex-row md:justify-center">
-    <div className="w-64 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border flex flex-col justify-center items-center text-center p-6">
-        <div className="text-md font-bold flex flex-col text-gray-900"><span className="uppercase">Today</span> <span className="font-normal text-gray-700 text-sm">October 22</span></div>
+    <div className="lg:w-64 md:mr-20 mb-10 transition duration-500 ease-in-out transform bg-white rounded-lg hover:scale-105 cursor-pointer border flex flex-col justify-center items-center text-center p-6">
+        <div className="text-md font-bold flex flex-col text-gray-900"><span className="uppercase">Today</span> <span className="font-normal text-gray-700 text-sm">{weather.current?.last_updated}</span></div>
         <div className="w-32 h-32 flex items-center justify-center">
             <svg width="95" height="72" viewBox="0 0 95 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">

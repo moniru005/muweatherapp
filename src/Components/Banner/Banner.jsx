@@ -11,14 +11,14 @@ const Banner = () => {
   
           <div>
             {/* Banned Text */}
-            <div className="absolute top-5 ml-12 lg:top-[200px]  lg:ml-12 font-semibold">
+            <div className="absolute top-14 ml-28 lg:top-[200px]  lg:ml-12 font-semibold">
                     <h1 className="text-xl lg:text-5xl text-white">
                     <p>Weather Forecasting</p>
                     </h1>
             </div>
 
             {/* BannerCard */}
-            <div className="absolute top-5 right-0">
+            <div className="hidden lg:flex absolute top-5 right-0">
                 <BannerCard></BannerCard>
             </div>
           </div>
